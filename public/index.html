@@ -7,12 +7,17 @@
   <body>
 
     <div id="app">
-        <ul>
-          <li v-for="item in images">
-              {{ item.id }}
-          </li>
-        </ul>
+          <picsum-image v-for="item in images" :author="item.author" :download_url="item.download_url"></picsum-image>
     </div>
+
+    <script type="text/x-template" id="picsumImageTemplate">
+        <div class="picsumImage">
+            <span>
+                <a v-bind:href="download_url"> Image link </a>
+                {{author}}
+            </span>
+        </div>
+</script>
 
     <script src="main.js"></script>
   </body>
