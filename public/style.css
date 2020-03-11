@@ -46,6 +46,10 @@ body {
     background: white;
 }
 
+/*Using object-fit:cover causes web page to perform extremely slow
+    Beauty is sacrificed here for the sake of usability*/
+/*Using object-fit:contain with a fixed height in .picsumImage
+    creates too much white space on every image type*/
 .galleryImage {
     width: 100%;
 }
