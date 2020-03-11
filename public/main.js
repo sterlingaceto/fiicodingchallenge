@@ -1,5 +1,5 @@
 Vue.component('picsum-image', {
-  template: "#picsumImageTemplate",
+  template: '#picsumImageTemplate',
   props: {
     id: Number,
     author: String,

@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
   <head>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
 
-    <div id="app">
-          <picsum-image v-for="item in images" :author="item.author" :download_url="item.download_url"></picsum-image>
+    <div class="header">
+      Journey through the Gallery
+    </div>
+
+    <div class="container" id="app">
+          <picsum-image
+                  v-for="item in images"
+                  :author="item.author"
+                  :url="item.url"
+                  :download_url="item.download_url">
+          </picsum-image>
     </div>
 
     <script type="text/x-template" id="picsumImageTemplate">
         <div class="picsumImage">
             <span>
-                <img class="galleryImage" v-bind:src="download_url">
+                <a v-bind:href="url">
+                  <img class="galleryImage" v-bind:src="download_url">
+                </a>
                 <div class="galleryAuthor">{{ author }}</div>
             </span>
         </div>
-</script>
+    </script>
 
     <script src="main.js"></script>
   </body>
