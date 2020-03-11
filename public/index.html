@@ -7,13 +7,11 @@
   <body>
 
     <div id="app">
-      <ol>
-        <picsum-image
-          v-for="item in imageList"
-          v-bind:picsum="item"
-          v-bind:key="item.id"
-        ></picsum-image>
-      </ol>
+        <ul>
+          <li v-for="item in images">
+              {{ item.id }}
+          </li>
+        </ul>
     </div>
 
     <script src="main.js"></script>
