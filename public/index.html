@@ -13,8 +13,8 @@
     <script type="text/x-template" id="picsumImageTemplate">
         <div class="picsumImage">
             <span>
-                <a v-bind:href="download_url"> Image link </a>
-                {{author}}
+                <img class="galleryImage" v-bind:src="download_url">
+                <div class="galleryAuthor">{{ author }}</div>
             </span>
         </div>
 </script>
