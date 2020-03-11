@@ -12,6 +12,20 @@ body {
     background: white;
 }
 
+.subTitle {
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.footer {
+    text-align: right;
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 5%;
+    background: white;
+}
+
 .right {
     text-align: right;
 }
@@ -21,14 +35,13 @@ body {
     margin: 25px 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .picsumImage {
-    width: 345px;
+    width: 300px;
     height: fit-content;
     margin: auto+10px 20px;
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 0;
     background: white;
 }
@@ -39,4 +52,25 @@ body {
 
 .galleryAuthor {
     padding: 10px 20px;
+}
+/*For any screen that is in portrait*/
+@media only screen and (max-aspect-ratio:1/1){
+    .container {
+        margin: auto;
+        display: inline;
+    }
+
+    .picsumImage {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .galleryImage {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .galleryAuthor {
+        font-size: 10pt;
+    }
 }
