@@ -35,12 +35,13 @@ body {
     margin: 25px 5%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .picsumImage {
     width: 300px;
     height: fit-content;
-    margin: auto+10px 20px;
+    margin: 10px 20px;
     flex-grow: 1;
     flex-shrink: 0;
     background: white;
