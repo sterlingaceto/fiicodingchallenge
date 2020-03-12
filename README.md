@@ -8,12 +8,12 @@ This application uses HTML, CSS and javascript with the Vue.js framework.
 
 The website shows a gallery of images parsed from the specific JSON link provided. Clicking on the images sends the user to the source of the image with the url provided. The photographer is presented underneath the image. A header and footer supply minor context on the image gallery as well as who constructed the website.
 
-The mobile version of the site activates when the page detects a window with an aspect ratio less than 1:1. This transforms the site into a single column scrollable image gallery with images that fill the width of the screen. Links are still accessable by tapping the image.
+The mobile version of the site activates when the page detects a window with an aspect ratio less than 1:1. This transforms the site into a single column scrollable image gallery with images that fill the width of the screen. Links are still accessible by tapping the image.
 
 ## Installation instructions
 Download a zipped copy of this repository using the "Clone or download" button and selecting the "Download ZIP" option.
 
-Open the downloaded zipped folder and extract it somewhere accessable.
+Open the downloaded zipped folder and extract it somewhere accessible.
 
 One unpacked, launch index.html, located in the "public" folder,
 with a browser that supports Javascript.
